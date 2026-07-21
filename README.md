@@ -15,3 +15,28 @@ nvm use --lts
 ```
 
 Please add issues to this repository if you encounter difficulties with the instructions, find bugs, or have suggestions for improvements.
+
+Sample Session:
+```
+% node bin/ftlbox.js list
+(no drives yet)
+
+% node bin/ftlbox.js create FromLR
+Created drive "FromLR"
+Public key: 225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
+Share this key with your peer so they can "ftlbox register" it.
+
+% ls -l FromLR
+total 80
+-rw-------@ 1 ericrangell  staff  37234 Jul 20 09:48 ftlbox.zip
+
+% node bin/ftlbox.js add FromLR FromLR
+Added contents of "FromLR" to "FromLR" -> version 2 (1 file(s) written/updated)
+
+% node bin/ftlbox.js seed FromLR      
+Seeding "FromLR"
+  public key : 225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
+  version    : 2
+  Announced on the DHT. Leave this running so peers can connect. Ctrl+C to stop.
+
+```
