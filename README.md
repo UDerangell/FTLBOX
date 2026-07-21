@@ -13,3 +13,5 @@ You may need to issue the following command before running the application:
 ```
 nvm use --lts
 ```
+
+Please add issues to this repository if you encounter difficulties with the instructions, find bugs, or have suggestions for improvements.
