@@ -66,4 +66,37 @@ Pulled "EricLR" (version 2) into /Users/ericrangell/test/FTLBOXV02/ftlbox/FromEr
 total 80
 -rw-r--r--  1 ericrangell  staff  37234 Jul 21 06:28 ftlbox.zip
 
+
+On the "Server" machine (it's just a peer, not really a server):
+
+Pressed Control-C to stop the seed command.
+
+% ftlbox addfile FromLR FromLR/f.hegla.233904y.origamitext       
+Added "FromLR/f.hegla.233904y.origamitext" to "FromLR" as "/f.hegla.233904y.origamitext" -> new version 3
+
+% ftlbox seed FromLR
+Seeding "FromLR"
+  public key : 225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
+  version    : 3
+  Announced on the DHT. Leave this running so peers can connect. Ctrl+C to stop.
+
+On the "Client" machine:
+
+% ftlbox versions EricLR
+"EricLR": versions 1-3 (live version 3)
+(reflects whatever was reachable on the DHT just now - may be stale if nobody is currently seeding)
+
+% ftlbox diff EricLR
+"EricLR": local copy is version 2, latest on the network is version 3.
+Changed paths:
+  added    /f.hegla.233904y.origamitext
+
+% ftlbox pull EricLR
+Pulled "EricLR" (version 3) into /Users/ericrangell/test/FTLBOXV02/ftlbox/FromEricLR (2 file(s) written/updated)
+
+% ls -l FromEricLR
+total 96
+-rw-r--r--  1 ericrangell  staff   6786 Jul 21 07:02 f.hegla.233904y.origamitext
+-rw-r--r--  1 ericrangell  staff  37234 Jul 21 06:28 ftlbox.zip
+
 ```
