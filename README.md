@@ -99,4 +99,17 @@ total 96
 -rw-r--r--  1 ericrangell  staff   6786 Jul 21 07:02 f.hegla.233904y.origamitext
 -rw-r--r--  1 ericrangell  staff  37234 Jul 21 06:28 ftlbox.zip
 
+% ftlbox diff EricLR
+"EricLR" is up to date (version 3).
+
+% ftlbox info EricLR
+{
+  "name": "EricLR",
+  "role": "remote",
+  "key": "225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58",
+  "storageDir": "/Users/ericrangell/test/FTLBOXV02/ftlbox/ftlbox-data/EricLR",
+  "pullDir": "/Users/ericrangell/test/FTLBOXV02/ftlbox/FromEricLR",
+  "version": 3
+}
+
 ```
