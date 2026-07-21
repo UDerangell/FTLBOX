@@ -6,3 +6,6 @@ Please read this chat to understand the architecture and design decisions.
 
 Local first architecture threat model considerations: https://claude.ai/share/4c388305-d0a0-4d3b-b300-db85b86a25f8
 Please read this chat in order to evaluate your threat model before you adopt the technology in this repository.
+
+Recommendation: If you are testing this application, install **nvm*** and the **lts** version of Node.js.
+See https://github.com/nvm-sh/nvm#installing-and-updating for instructions.
