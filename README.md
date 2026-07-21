@@ -39,7 +39,9 @@ Seeding "FromLR"
   version    : 2
   Announced on the DHT. Leave this running so peers can connect. Ctrl+C to stop.
 
+
 Run the following on another machine on your local network:
+
 % node bin/ftlbox.js register EricLR 225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
 Registered "EricLR" -> 225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
 You can now run "ls", "versions", or "pull" using just this name.
