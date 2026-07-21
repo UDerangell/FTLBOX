@@ -16,7 +16,7 @@ nvm use --lts
 
 Please add issues to this repository if you encounter difficulties with the instructions, find bugs, or have suggestions for improvements.
 
-Sample Session:
+Sample Session: (refer to https://github.com/UDerangell/FTLBOX/tree/main/ftlbox#2-command-reference for command syntax)
 ```
 % node bin/ftlbox.js list
 (no drives yet)
