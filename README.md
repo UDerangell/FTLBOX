@@ -39,4 +39,29 @@ Seeding "FromLR"
   version    : 2
   Announced on the DHT. Leave this running so peers can connect. Ctrl+C to stop.
 
+Run the following on another machine on your local network:
+% node bin/ftlbox.js register EricLR 225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
+Registered "EricLR" -> 225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
+You can now run "ls", "versions", or "pull" using just this name.
+
+% node bin/ftlbox.js ls EricLR
+EricLR  [remote]  key=225be1552a53...  version=2
+1 file(s), 36.4 KB total
+
+└── ftlbox.zip  (36.4 KB)
+
+% node bin/ftlbox.js versions EricLR
+"EricLR": versions 1-2 (live version 2)
+(reflects whatever was reachable on the DHT just now - may be stale if nobody is currently seeding)
+
+% node bin/ftlbox.js list                             
+EricLR  [remote]  key=225be1552a53b0866ee9261761239e01a7587ea81aa4181d54201ffdedf1dd58
+
+% node bin/ftlbox.js pull EricLR FromEricLR
+Pulled "EricLR" (version 2) into /Users/ericrangell/test/FTLBOXV02/ftlbox/FromEricLR (1 file(s) written/updated)
+
+% ls -l FromEricLR
+total 80
+-rw-r--r--  1 ericrangell  staff  37234 Jul 21 06:28 ftlbox.zip
+
 ```
